@@ -119,6 +119,7 @@ html {
 }
 
 @media (max-width: 550px) {
+    // @media (max-width: 768px) {
     html {
         font-size: 14px;
     }
@@ -135,11 +136,12 @@ main {
     width: 100vw;
     position: relative;
     overflow: hidden;
+    min-width: 360px;
 }
 
 .container {
     width: 100%;
-    min-width: 360px;
+    // min-width: 360px;
     padding-right: 0.75rem;
     padding-left: 0.75rem;
     margin-right: auto;
@@ -223,6 +225,7 @@ body > iframe {
             color: #000000;
         }
     }
+
     @mixin burger-item {
         width: 30px;
         height: 3px;
@@ -309,6 +312,41 @@ body > iframe {
         }
         .burger {
             display: flex;
+        }
+        .nav-mobil {
+            position: fixed;
+            top: -100vh;
+            top: 0vh;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #9ac002;
+            transition: 0.3s ease;
+            // z-index: -1 !important;
+            opacity: 0;
+            visibility: hidden;
+
+            .navItem {
+                position: absolute;
+                left: 30%;
+                font-size: 3rem;
+                color: #fff;
+                opacity: 0;
+                transition: 1.3s ease;
+            }
+        }
+        .nav-mobil-active {
+            visibility: visible;
+
+            top: 0 !important;
+            opacity: 1;
+
+            transition: 0.3s ease;
+            .navItem {
+                transition: 1.3s ease;
+
+                // opacity: 1;
+            }
         }
     }
 }
@@ -470,6 +508,12 @@ body > iframe {
     text-transform: uppercase;
     font-family: $FuturaRegular;
 }
+.headline-smaller {
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: $FuturaRegular;
+}
 .headline-center {
     text-align: center;
 }
@@ -520,24 +564,49 @@ body > iframe {
         .variant {
             @include svg-card-style;
         }
-        .content {
-            width: 80%;
+        .weedround {
             position: absolute;
-            top: 400px;
-            left: 20%;
+            left: -100px;
+            bottom: -80px;
+        }
+        .content {
+            width: 50%;
+            position: absolute;
+            top: 50px;
+            left: 42%;
             color: #fff;
-            padding: 0 20px;
+            text-transform: lowercase;
+            // padding: 0 20px;
             li {
                 margin-top: 15px;
+                list-style-type: none;
+                position: relative;
+                margin-bottom: 17px;
+
+                .card__weed {
+                    // height: 60px;
+                    position: absolute;
+                    left: -25%;
+                    // top: -15px;
+                }
             }
         }
     }
     .left {
+        padding-right: 1.2%;
+        // background-color: red;
+        .weedround-left {
+            position: absolute;
+            left: -150px;
+            bottom: -600px;
+        }
     }
     .right {
+        // background-color: pink;
         .content {
-            top: 520px;
-            left: 8%;
+            top: 50px;
+            // left: 0;
+            left: 16%;
         }
     }
 }
@@ -678,6 +747,345 @@ body > iframe {
 
 .reverse {
     flex-direction: row-reverse !important;
+}
+
+.roadmap__section {
+    background: radial-gradient(#292a2e, #111016);
+    min-height: 100vh;
+    padding-bottom: 200px;
+    position: relative;
+    overflow: hidden;
+    .headline {
+        padding-top: 100px;
+    }
+
+    .bigWeed {
+        width: 70%;
+        margin-left: 15%;
+        display: block;
+    }
+    .mobilWeed {
+        width: 95%;
+        display: block;
+    }
+    .roadmap__container {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        // background-color: red;
+    }
+    .roadmap-text {
+        position: absolute;
+        color: #fff;
+        font-family: $Raleway !important;
+        text-align: center;
+    }
+
+    .roadmap1 {
+        top: 385px;
+        left: 530px;
+    }
+    .roadmap2 {
+        top: 485px;
+        left: 230px;
+    }
+    .roadmap3 {
+        top: 490px;
+        right: 265px;
+    }
+    .roadmap4 {
+        top: 650px;
+        left: 310px;
+    }
+    .roadmap5 {
+        top: 770px;
+        right: 250px;
+    }
+    .roadmap6 {
+        top: 930px;
+        left: 150px;
+    }
+    .roadmap7 {
+        top: 1020px;
+        right: 170px;
+    }
+    .roadmap8 {
+        top: 1220px;
+        left: 150px;
+    }
+    .roadmap9 {
+        top: 1250px;
+        right: 200px;
+    }
+    .roadmap10 {
+        top: 1520px;
+        left: 200px;
+    }
+    .roadmap11 {
+        top: 1520px;
+        left: 415px;
+    }
+    .roadmap12 {
+        top: 1580px;
+        right: 430px;
+    }
+    .roadmap13 {
+        top: 1520px;
+        right: 200px;
+    }
+
+    @media (max-width: 1340px) {
+        .roadmap1 {
+            top: 350px;
+            left: 370px;
+        }
+        .roadmap2 {
+            top: 435px;
+            left: 140px;
+        }
+        .roadmap3 {
+            top: 430px;
+            right: 165px;
+        }
+        .roadmap4 {
+            top: 550px;
+            left: 230px;
+        }
+        .roadmap5 {
+            top: 640px;
+            right: 150px;
+        }
+        .roadmap6 {
+            top: 760px;
+            left: 90px;
+        }
+        .roadmap7 {
+            top: 825px;
+            right: 100px;
+        }
+        .roadmap8 {
+            top: 970px;
+            left: 80px;
+        }
+        .roadmap9 {
+            top: 990px;
+            right: 100px;
+        }
+        .roadmap10 {
+            top: 1200px;
+            left: 135px;
+        }
+        .roadmap11 {
+            top: 1200px;
+            left: 290px;
+        }
+        .roadmap12 {
+            top: 1240px;
+            right: 300px;
+        }
+        .roadmap13 {
+            top: 1200px;
+            right: 90px;
+        }
+    }
+    @media (max-width: 992px) {
+        .roadmap-text {
+            text-align: left;
+            min-width: 250px;
+        }
+        .roadmap1 {
+            top: 265px;
+            left: 480px;
+        }
+        .roadmap2 {
+            top: 330px;
+            left: 540px;
+        }
+        .roadmap3 {
+            top: 430px;
+            left: 545px;
+        }
+        .roadmap4 {
+            top: 570px;
+            left: 490px;
+        }
+        .roadmap5 {
+            top: 710px;
+            left: 455px;
+        }
+        .roadmap6 {
+            top: 890px;
+            left: 420px;
+        }
+        .roadmap7 {
+            top: 1025px;
+            left: 400px;
+        }
+        .roadmap8 {
+            top: 1170px;
+            left: 480px;
+        }
+        .roadmap9 {
+            top: 1290px;
+            left: 400px;
+        }
+        .roadmap10 {
+            top: 1400px;
+            left: 435px;
+        }
+        .roadmap11 {
+            top: 1650px;
+            left: 365px;
+        }
+        .roadmap12 {
+            top: 1650px;
+            left: 550px;
+        }
+        .roadmap13 {
+            top: 1800px;
+            left: 320px;
+        }
+    }
+
+    .roadmap__br-mob {
+        display: none !important;
+    }
+    @media (max-width: 768px) {
+        .weedMobil {
+            margin-left: -290px;
+        }
+        .roadmap-text {
+            text-align: left;
+            // color: red;
+            max-width: 100px !important;
+            .roadmap__br-dt {
+                display: none !important;
+            }
+            .roadmap__br-mob {
+                display: block !important;
+            }
+        }
+        .roadmap1 {
+            top: 218px;
+            left: 180px;
+        }
+        .roadmap2 {
+            top: 280px;
+            left: 230px;
+        }
+        .roadmap3 {
+            top: 385px;
+            left: 230px;
+        }
+        .roadmap4 {
+            top: 510px;
+            left: 190px;
+        }
+        .roadmap5 {
+            top: 660px;
+            left: 215px;
+        }
+        .roadmap6 {
+            top: 840px;
+            left: 200px;
+        }
+        .roadmap7 {
+            top: 945px;
+            left: 160px;
+        }
+        .roadmap8 {
+            top: 1140px;
+            left: 180px;
+        }
+        .roadmap9 {
+            top: 1260px;
+            left: 150px;
+        }
+        .roadmap10 {
+            top: 1370px;
+            left: 135px;
+        }
+        .roadmap11 {
+            top: 1610px;
+            left: 65px;
+        }
+        .roadmap12 {
+            top: 1610px;
+            left: 270px;
+        }
+        .roadmap13 {
+            top: 1750px;
+            left: 65px;
+        }
+    }
+    @media (max-width: 768px) and (min-width: 550px) {
+        .roadmap-text {
+            text-align: left;
+            // color: red;
+            // max-width: 100px !important;
+            .roadmap__br-dt {
+                display: none !important;
+            }
+            .roadmap__br-mob {
+                display: block !important;
+            }
+            // br{
+            //     display: none;
+            // }
+        }
+
+        .roadmap4 {
+            top: 510px;
+            left: 380px;
+        }
+        .roadmap5 {
+            top: 660px;
+            left: 380px;
+        }
+        .roadmap6 {
+            top: 800px;
+            left: 380px;
+        }
+        .roadmap7 {
+            top: 945px;
+            left: 380px;
+        }
+        .roadmap8 {
+            top: 1100px;
+            left: 380px;
+        }
+        .roadmap9 {
+            top: 1220px;
+            left: 380px;
+        }
+        .roadmap10 {
+            top: 1340px;
+            left: 380px;
+        }
+        .roadmap11 {
+            top: 1610px;
+            left: 65px;
+        }
+        .roadmap12 {
+            top: 1610px;
+            left: 270px;
+        }
+        .roadmap13 {
+            top: 1750px;
+            left: 65px;
+        }
+    }
+}
+.RoadMapText {
+    position: relative;
+}
+.displayBlock {
+    display: block !important;
+}
+
+.displayNone {
+    display: none !important;
 }
 
 .digital__side {
@@ -826,9 +1234,13 @@ body > iframe {
 }
 
 .about__section {
-    background-color: #111016;
+    // background-color: #111016;
+    background: radial-gradient(#292a2e, #111016);
+
     min-height: 100vh;
     position: relative;
+    overflow: hidden;
+    padding-bottom: 150px;
 }
 
 // Risks section
@@ -915,6 +1327,17 @@ body > iframe {
                 // margin: 100px 80px 80px 0;
                 margin: 80px 80px 0px 80px;
             }
+        }
+    }
+
+    .section__row {
+        font-size: 1rem;
+        line-height: 1.3rem;
+        .content {
+            margin-top: 30px;
+        }
+        .card__weed {
+            left: -30% !important;
         }
     }
 }
@@ -1040,6 +1463,14 @@ body > iframe {
     }
     .digital__side {
     }
+
+    .section__row {
+        flex-direction: column;
+        .pay-variant {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -1063,6 +1494,59 @@ body > iframe {
     // .column {
     //     flex-direction: column !important;
     // }
+
+    .section__row {
+        flex-direction: column;
+        .pay-variant {
+            width: 100%;
+            margin-bottom: 40px;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .next__content-row {
+        justify-content: center !important;
+    }
+
+    .next__content-row .card-mt {
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    .card-mb {
+        margin-top: 20px !important;
+
+        margin-bottom: 20px !important;
+    }
+    .next__content-row {
+        min-height: none !important;
+        .card {
+            width: 100%;
+            // margin: 0 10px 100px;
+            .wrap {
+                flex-direction: row;
+                padding: 20px;
+                .picture {
+                    width: 30%;
+                }
+                .text {
+                    margin-top: 0;
+                    width: 70%;
+                    font-size: 1rem;
+                    line-height: 1.4rem;
+                    text-align: inherit;
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .next__content-row:nth-child(1) .wrap {
+        min-height: 100px !important;
+    }
 }
 @media (max-width: 550px) {
     .top__section-headline {
@@ -1114,19 +1598,19 @@ body > iframe {
         padding-top: 50px !important;
     }
 
-    .next__content-row {
-        justify-content: center !important;
-    }
+    // .next__content-row {
+    //     justify-content: center !important;
+    // }
 
-    .next__content-row .card-mt {
-        margin-top: 20px !important;
-        margin-bottom: 20px !important;
-    }
-    .card-mb {
-        margin-top: 20px !important;
+    // .next__content-row .card-mt {
+    //     margin-top: 20px !important;
+    //     margin-bottom: 20px !important;
+    // }
+    // .card-mb {
+    //     margin-top: 20px !important;
 
-        margin-bottom: 20px !important;
-    }
+    //     margin-bottom: 20px !important;
+    // }
 
     .digital__side .digital__side-content .reverse .text-container {
         // padding-top: 100px !important;
@@ -1138,32 +1622,51 @@ body > iframe {
         padding-bottom: 35px !important;
     }
 
-    .next__content-row {
-        min-height: none !important;
-        .card {
-            width: 100%;
-            // margin: 0 10px 100px;
-            .wrap {
-                flex-direction: row;
-                padding: 20px;
-                .picture {
-                    width: 30%;
+    // .next__content-row {
+    //     min-height: none !important;
+    //     .card {
+    //         width: 100%;
+    //         // margin: 0 10px 100px;
+    //         .wrap {
+    //             flex-direction: row;
+    //             padding: 20px;
+    //             .picture {
+    //                 width: 30%;
+    //             }
+    //             .text {
+    //                 margin-top: 0;
+    //                 width: 70%;
+    //                 font-size: 1rem;
+    //                 line-height: 1.4rem;
+    //                 text-align: inherit;
+    //                 br {
+    //                     display: none;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    // .next__content-row:nth-child(1) .wrap {
+    //     min-height: 100px !important;
+    // }
+}
+
+@media (max-width: 480px) {
+    .section__row {
+        .pay-variant {
+            font-size: 1rem;
+            line-height: 1.3rem;
+            .content {
+                top: 20px !important;
+                img {
+                    width: 40px;
                 }
-                .text {
-                    margin-top: 0;
-                    width: 70%;
-                    font-size: 1rem;
-                    line-height: 1.4rem;
-                    text-align: inherit;
-                    br {
-                        display: none;
-                    }
+                li {
+                    margin-top: 10px;
+                    margin-bottom: 5px;
                 }
             }
         }
-    }
-
-    .next__content-row:nth-child(1) .wrap {
-        min-height: 100px !important;
     }
 }

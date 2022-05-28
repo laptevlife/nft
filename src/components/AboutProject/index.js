@@ -10,7 +10,7 @@ import img5 from '../../Images/image5.png'
 
 const AboutProject = () => {
     return (
-        <div className="about__project">
+        <div className="about__project About">
             <div className="container">
                 <div className="headline">
                     About the project

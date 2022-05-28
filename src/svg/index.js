@@ -111,27 +111,7 @@ export const Variant1 = () => {
 }
 export const Variant2 = () => {
     return (
-        <svg className="variant" width="548" height="1005" viewBox="0 0 548 1005" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="100" width="448" height="680" rx="30" fill="#109C2B" />
-            <path d="M1 990.178V57.7804C1 49.6285 6.7245 43 13.7646 43H485.235C492.24 43 498 49.6285 498 57.7804V990.22C498 998.33 492.276 1005 485.235 1005H13.7646C6.7245 1004.96 1 998.33 1 990.178Z" fill="url(#paint0_linear_113_3)" />
-            <path opacity="0.55" d="M13.6364 932H485.342C492.35 932 498.113 926.286 498.113 919.283V320.721C394.879 378.205 309.858 391.395 248.351 391.567C165.287 391.782 135.263 368.324 52.6251 381.642C32.028 384.951 15.3084 389.419 0.865479 394.703V919.283C0.865479 926.286 6.59283 932 13.6364 932Z" fill="url(#paint1_linear_113_3)" />
-            <path opacity="0.55" d="M13.6364 932H485.342C492.35 932 498.113 926.372 498.113 919.498C498.113 685.692 498.113 451.844 498.113 218.039C466.773 261.69 387.124 360.677 258.312 404.757C141.986 444.541 0.865479 403.683 0.865479 403.683V915.287C0.865479 915.287 9.08298 926.63 13.6364 932Z" fill="url(#paint2_linear_113_3)" />
-            <defs>
-                <linearGradient id="paint0_linear_113_3" x1="1.00015" y1="523.986" x2="497.98" y2="523.986" gradientUnits="userSpaceOnUse">
-                    <stop offset="0.0508" stop-color="#3F3F3F" />
-                    <stop offset="0.9974" stop-color="#020202" />
-                </linearGradient>
-                <linearGradient id="paint1_linear_113_3" x1="0.865664" y1="626.35" x2="498.094" y2="626.35" gradientUnits="userSpaceOnUse">
-                    <stop offset="0.0265" stop-color="#06C42E" />
-                    <stop offset="0.9503" stop-color="#096B09" />
-                </linearGradient>
-                <linearGradient id="paint2_linear_113_3" x1="0.865479" y1="575.01" x2="498.094" y2="575.01" gradientUnits="userSpaceOnUse">
-                    <stop offset="0.0265" stop-color="#06C42E" />
-                    <stop offset="0.9503" stop-color="#096B09" />
-                </linearGradient>
-            </defs>
-        </svg>
-
+      null
 
 
     )

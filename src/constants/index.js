@@ -82,3 +82,59 @@ export const aboutCollectionArr = [
     },
 ]
 
+
+
+export const round1Arr = [
+    {
+        text: "We will distribute among all the 555 30% of the fund profit from:"
+    },
+    {
+        text: "Dividends from the main business"
+    },
+    {
+        text: "The part of NFT resale fee (part of 4% from each resale)"
+    },
+    {
+        text: "Other future activities "
+    },
+    {
+        text: "Profit = Income - Operational costs"
+    },
+    {
+        text: "Chat in Discord + Special support"
+    },
+    {
+        text: "Individual manager for all owners"
+    },
+    {
+        text: "Business advice form medical cannabis manufacturing brand founders' upon request"
+    },
+    {
+        text: "Private room in Discord for the direct communication with founders"
+    },
+    {
+        text: "Regular online-meetings with founders"
+    },
+
+]
+
+export const round2Arr = [
+    {
+        text: "We will distribute among all the 33 333 70% of the fund profit from:"
+    },
+    {
+        text: "Dividends from the main business"
+    },
+    {
+        text: "The part of NFT resale fee (part of 4% from each resale)"
+    },
+    {
+        text: "Other future activities"
+    },
+    {
+        text: "Profit = Income - Operational costs"
+    },
+    {
+        text: "Chat in Discord general acivities"
+    },
+]
