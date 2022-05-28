@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/nft/static/css/main.132d84d0.chunk.css",
-    "main.js": "/nft/static/js/main.00165240.chunk.js",
-    "main.js.map": "/nft/static/js/main.00165240.chunk.js.map",
+    "main.css": "/nft/static/css/main.b7a620da.chunk.css",
+    "main.js": "/nft/static/js/main.2c88eaf3.chunk.js",
+    "main.js.map": "/nft/static/js/main.2c88eaf3.chunk.js.map",
     "runtime-main.js": "/nft/static/js/runtime-main.12b8b3b3.js",
     "runtime-main.js.map": "/nft/static/js/runtime-main.12b8b3b3.js.map",
     "static/css/2.ee779822.chunk.css": "/nft/static/css/2.ee779822.chunk.css",
-    "static/js/2.e84f7dfe.chunk.js": "/nft/static/js/2.e84f7dfe.chunk.js",
-    "static/js/2.e84f7dfe.chunk.js.map": "/nft/static/js/2.e84f7dfe.chunk.js.map",
+    "static/js/2.9a231d87.chunk.js": "/nft/static/js/2.9a231d87.chunk.js",
+    "static/js/2.9a231d87.chunk.js.map": "/nft/static/js/2.9a231d87.chunk.js.map",
     "index.html": "/nft/index.html",
     "static/css/2.ee779822.chunk.css.map": "/nft/static/css/2.ee779822.chunk.css.map",
-    "static/css/main.132d84d0.chunk.css.map": "/nft/static/css/main.132d84d0.chunk.css.map",
-    "static/js/2.e84f7dfe.chunk.js.LICENSE.txt": "/nft/static/js/2.e84f7dfe.chunk.js.LICENSE.txt",
+    "static/css/main.b7a620da.chunk.css.map": "/nft/static/css/main.b7a620da.chunk.css.map",
+    "static/js/2.9a231d87.chunk.js.LICENSE.txt": "/nft/static/js/2.9a231d87.chunk.js.LICENSE.txt",
     "static/media/001.af191765.png": "/nft/static/media/001.af191765.png",
     "static/media/10 1.501ed865.png": "/nft/static/media/10 1.501ed865.png",
     "static/media/11 1.0312dc0e.png": "/nft/static/media/11 1.0312dc0e.png",
@@ -23,7 +23,13 @@
     "static/media/8 1.5232b484.png": "/nft/static/media/8 1.5232b484.png",
     "static/media/9 1.65a4e4b4.png": "/nft/static/media/9 1.65a4e4b4.png",
     "static/media/Counter.999bf775.png": "/nft/static/media/Counter.999bf775.png",
+    "static/media/Group 52.e5ae419b.png": "/nft/static/media/Group 52.e5ae419b.png",
+    "static/media/Group 53.f1745827.png": "/nft/static/media/Group 53.f1745827.png",
+    "static/media/Group 55 (2).eff7e13b.png": "/nft/static/media/Group 55 (2).eff7e13b.png",
+    "static/media/Group 55 (5).d7276c1d.png": "/nft/static/media/Group 55 (5).d7276c1d.png",
     "static/media/Group.8a212f7d.png": "/nft/static/media/Group.8a212f7d.png",
+    "static/media/Rectangle (4).4be76cee.png": "/nft/static/media/Rectangle (4).4be76cee.png",
+    "static/media/Rectangle (5).924ced8e.png": "/nft/static/media/Rectangle (5).924ced8e.png",
     "static/media/style.scss": "/nft/static/media/ag-futura.efc456ab.woff2",
     "static/media/image1.434a771e.png": "/nft/static/media/image1.434a771e.png",
     "static/media/image2.b5811a2d.png": "/nft/static/media/image2.b5811a2d.png",
@@ -40,8 +46,8 @@
   "entrypoints": [
     "static/js/runtime-main.12b8b3b3.js",
     "static/css/2.ee779822.chunk.css",
-    "static/js/2.e84f7dfe.chunk.js",
-    "static/css/main.132d84d0.chunk.css",
-    "static/js/main.00165240.chunk.js"
+    "static/js/2.9a231d87.chunk.js",
+    "static/css/main.b7a620da.chunk.css",
+    "static/js/main.2c88eaf3.chunk.js"
   ]
 }
