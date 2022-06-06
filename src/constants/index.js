@@ -10,6 +10,12 @@ import ACimg8 from '../Images/9 1.png'
 import ACimg9 from '../Images/13 1.png'
 import ACimg10 from '../Images/14 1.png'
 
+import face1 from '../Images/face (1).png'
+import face2 from '../Images/face (2).png'
+import face3 from '../Images/face (3).png'
+import face4 from '../Images/face (4).png'
+import face5 from '../Images/face (5).png'
+
 
 export const risks = [
     {
@@ -34,6 +40,49 @@ export const risks = [
         text: "According to the legislation of the Republic of Kazakhstan the license cannot be pulled easily. There have to be gross violations that are out of question in our project due to the special regime both at our farm and at the production. As to the legal framework, the law in the Republic of Kazakhstan is not retrospective thereby it is impossible to cancel or change the earlier decisions. Moreover the investors are well protected from such actions including the actions of Kazakhstan government and the country itself is paying a great deal of attention to the invesment security and the presence of investors in the region. All the security measures and preferences can be found at invest.gov.kz"
 
     },
+]
+export const faqArr = [
+    {
+        title: "What is NFT?",
+        text: "A non-fungible token (NFT) is a non-interchangeable unit of data stored on a blockchain, a form of digital ledger that can be sold and traded. Types of NFT data units may be associated with digital files such as photos, videos and audio. Because each token is uniquely identifiable, NFTs differ from most cryptocurrencies, such as Bitcoin, which are fungible. (Ссылка на Wikipedia)"
+    },
+ 
+   
+    {
+        title: "How to buy Medican NFT?",
+        text: "You should have an installed Metamask with two types on coins: Polygon Matic native network token for paying the transactions fees and stable coin DAI for buying NFT itself. You can acquire Matic and Stablecoin Follow the link to see the complete visual instruction"
+    },
+    {
+        title: "Where can I see my NFTs?",
+        text: "You can find NFTs in your wallet in the corresponding section (ссылку на metamask и раздел где это написано). You can also go to the OpenSea site, initialize a wallet and see your NFTs there."
+    },
+    {
+        title: "How is Medican NFT related to the real project?",
+        text: "Currently we cannot sell NFT directly for the business share due to the legislation so we have developed a model according to which we are creating the fund aimed at representing the interests of Medican NFT collection owners in the main project. The fund will own 30% of company shares and distribute benefits from the company among the NFT owners. "
+    },
+    {
+        title: "What if I didn't manage to mint?",
+        text: "You can acquire Medican NFT on a secondary market. Be careful, please follow only the official link from this site and don't forget to double check your collection before buying. Be careful with your funds. "
+    },
+    {
+        title: "How much will I earn buying Medican NFT?",
+        text: "Neither we nor anyone from the team can guarantee the income or make perfect forecasts. The collection is moving towards NFT technology implementation as intended and all benefits will be distributed as recieved. All the information on this site and in official sources is for informational purposes only. Do your own research. The collection is provided as it is. NFT owner is fully responsible for possible profit or loss. "
+    },
+    {
+        title: "How will the first NFT sales (minting) be held?",
+        text: 'Sales will start on ____ 2022 and will be based on "first come, first served" principle.'
+    },
+    {
+        title: "Someone on behalf of the team added me to some chat and said I won the lottery. What do I do?",
+        text:
+         "No one from the team will write you first, ask to initialize the wallet, ask for your 12 word phrase, tell you are the winner of some lottery, inform of technical issues and etc. If this is the case then you are being cheated. We dont need access to your private information and especially the wallet within the project. The wallet is your most precious asset and you are responsible for its security. <br/><br/> All the communication with our project team members can only take place in the official sources listed on our website. <br/><br/> If your saw someone using branding, collection name or images to get access to any of your data or proposing to acquire something that will allegedly be released by developpers, please address the Discord technical support or write an email."
+    },
+    
+    // {
+    //     title: "",
+    //     text: ""
+    // },
+   
 ]
 
 
@@ -137,4 +186,109 @@ export const round2Arr = [
     {
         text: "Chat in Discord general acivities"
     },
+]
+
+
+export const teamArr = [
+    {
+        img: face1,
+        title: "Vlad Vasilevsky",
+        position: "Digital partner, Strategy, Development"
+    },
+    {
+        img: face2,
+        title: "Natalina Sergeevna",
+        position: "Digital partner, Project Management, Promotion"
+    },
+    {
+        img: face3,
+        title: "Umit Telegenova",
+        position: "project designer"
+    },
+    {
+        img: face4,
+        title: "project designer",
+        position: "project designer"
+    },
+    {
+        img: face4,
+        title: "Alexey Smirnov",
+        position: "Blockchain Developer"
+    },
+    {
+        img: face5,
+        title: "Mikhail Laptev",
+        position: "Front-end developer"
+    },
+
+]
+export const businessTeamArr = [
+    {
+        img: face1,
+        title: "Ruslan Zhemkov",
+        position: "Founding partner",
+        links: {
+            fb: "x",
+            tw: "x",
+            in: "x"
+        }
+    },
+   
+    {
+        img: face1,
+        title: "Rustem Bassenov",
+        position: "Founding partner",
+        links: {
+            fb: "x",
+            tw: "x",
+            in: "x"
+        }
+    },
+     {
+        img: face1,
+        title: "Harbaksh Nanda",
+        position: "Founding partner",
+        links: {
+            fb: "x",
+            // tw: "x",
+            in: "x"
+        }
+    },
+   
+
+]
+export const cultivationTeamArr = [
+    {
+        img: face1,
+        title: "Brian Smalley",
+        position: "Founding partner",
+        links: {
+            fb: "x",
+            // tw: "x",
+            in: "x"
+        }
+    },
+   
+    {
+        img: face1,
+        title: "Maxim Skrynnik",
+        position: "Founding partner",
+        links: {
+            fb: "x",
+            // tw: "x",
+            in: "x"
+        }
+    },
+     {
+        img: face1,
+        title: "Dinara Kassenova",
+        position: "Founding partner",
+        links: {
+            fb: "x",
+            // tw: "x",
+            // in: "x"
+        }
+    },
+   
+
 ]

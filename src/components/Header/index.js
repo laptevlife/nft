@@ -2,6 +2,7 @@ import React from 'react'
 import Metamask from '../../Images/Metamask.png'
 import clsx from 'clsx';
 import { Context } from '../../constants/context'
+import Button from './Button'
 
 const Header = () => {
 
@@ -10,7 +11,7 @@ const Header = () => {
     const { windowWidth } = React.useContext(Context)
 
     return (
-        <div className='header'>
+        <div className='header Home'>
             {windowWidth < 992 && <NavItems nav={nav} navControl={navControl} />}
 
             <div className="container header-container">
@@ -25,12 +26,13 @@ const Header = () => {
                     <div className='burger-center'></div>
                     <div className='burger-bottom'></div>
                 </div>
-                <div className="metamaskButton">
+                <Button />
+                {/* <div className="metamaskButton">
                     <img src={Metamask} alt="" />
                     <div className="metamaskButton-text">
                         Personal account
                     </div>
-                </div>
+                </div> */}
             </div>
 
 
@@ -48,8 +50,8 @@ const NavItems = ({ nav, navControl }) => {
 
     const scrollTo = (selector) => {
         const block = document.querySelector(`.${selector}`)
-        console.log("selector", selector);
-        console.log("HI", block);
+        // console.log("selector", selector);
+        // console.log("HI", block);
         block.scrollIntoView({ behavior: 'smooth' })
         navControl(false)
     }
@@ -63,10 +65,11 @@ const NavItems = ({ nav, navControl }) => {
         )}>
             {
                 navArr.map((i, index) => {
-                    console.log("navArr[index]", navArr[index])
+                    {/* console.log("navArr[index]", navArr[index]) */}
                     return (
                         <div className="navItem"
-                            onClick={() => scrollTo( navArr[index])}
+                            key={i + index}
+                            onClick={() => scrollTo(navArr[index])}
                             style={windowWidth < 992
                                 ? {
                                     top: `${top + (index * 70)}px`,

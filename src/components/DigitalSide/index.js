@@ -184,8 +184,8 @@ const DigitalSide = () => {
                     </div>
                 </div>
 
-                <br /><br />
-                <br /><br />
+                {/* <br /><br /> */}
+                {/* <br /><br /> */}
                 <br /><br />
                 <p className="text">
                     And this is not the end of the list. Together with our NFT owners we will define other business projects for the SPV.

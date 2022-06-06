@@ -1,12 +1,13 @@
 import React from 'react'
 import Header from './components/Header/index'
 import TopSection from './components/TopSection/index';
-import Risks from './components/Risks';
+import Risks, {Faq} from './components/Risks';
 import AboutProject from './components/AboutProject/index';
 import DigitalSide from './components/DigitalSide';
 import AboutCollection from './components/AboutCollection.js';
 import RoadMap from './components/RoadMap/index.js';
 import { Context } from './constants/context'
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -33,7 +34,8 @@ const App = () => {
         <AboutCollection />
         <RoadMap />
         <Risks />
-
+        <Faq />
+        <Footer />
       </div>
     </Context.Provider>
   )

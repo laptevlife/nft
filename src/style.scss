@@ -328,11 +328,12 @@ body > iframe {
 
             .navItem {
                 position: absolute;
-                left: 30%;
+                left: 20%;
                 font-size: 3rem;
                 color: #fff;
                 opacity: 0;
                 transition: 1.3s ease;
+                text-transform: uppercase;
             }
         }
         .nav-mobil-active {
@@ -507,6 +508,9 @@ body > iframe {
     color: #9ac002;
     text-transform: uppercase;
     font-family: $FuturaRegular;
+}
+.headline-black {
+    color: #000000;
 }
 .headline-smaller {
     font-size: 3rem;
@@ -683,14 +687,34 @@ body > iframe {
     .swiper-container {
         overflow: visible;
     }
+    .swiper-wrapper {
+        // padding: 0 10px !important;
+    }
+    .swiper-button-prev {
+        background-color: red !important;
+    }
+    .sliderArrow {
+        position: absolute;
+        top: 45%;
+        color: red !important;
+        z-index: 5;
+    }
+    .toLeft {
+        left: -20px;
+        transform: rotate(180deg);
+    }
+    .toRight {
+        right: -20px;
+    }
     .collection-slide {
         max-width: 350px;
         min-width: 150px;
         height: 440px;
         border-radius: 20px;
-        border: 3px solid #21930d;
+        border: 4px solid #21930d;
         text-align: center;
         padding: 30px 50px;
+        // margin: 0 10px;
         background-color: #fff;
         // box-shadow : inset  1px 1px 1px   #187707af;
         // box-shadow: inset 2px 2px 2px #187707, -2px -2px 2px #1877073f;
@@ -698,6 +722,8 @@ body > iframe {
         -moz-box-shadow: 1px 0px 25px -11px rgba(22, 142, 0, 0.62) inset;
         box-shadow: 1px 0px 25px -11px rgba(22, 142, 0, 0.62) inset;
         position: relative;
+        // transition: 0.3s ease;
+
         img {
             // width: 100px;
             height: 100px;
@@ -738,6 +764,10 @@ body > iframe {
 
         // }
     }
+    .collection-slide:hover {
+        // transform: scale(1.05);
+        // transition: 0.3s ease;
+    }
 }
 
 .circle {
@@ -760,8 +790,9 @@ body > iframe {
     }
 
     .bigWeed {
-        width: 70%;
-        margin-left: 15%;
+        width: 100%;
+        // width: 70%;
+        // margin-left: 15%;
         display: block;
     }
     .mobilWeed {
@@ -780,113 +811,125 @@ body > iframe {
         color: #fff;
         font-family: $Raleway !important;
         text-align: center;
+        transition: 0.3s ease;
+    }
+    .roadmap-text:hover {
+        transition: 0.3s ease;
+        transform: scale(1.2);
+        cursor: pointer;
     }
 
     .roadmap1 {
-        top: 385px;
+        // top: 385px;
+        top: 445px;
         left: 530px;
     }
     .roadmap2 {
-        top: 485px;
-        left: 230px;
+        // top: 485px;
+        top: 600px;
+        left: 30px;
     }
     .roadmap3 {
-        top: 490px;
-        right: 265px;
+        top: 600px;
+        right: 120px;
     }
     .roadmap4 {
-        top: 650px;
-        left: 310px;
+        // top: 650px;
+        top: 820px;
+        // left: 310px;
+        left: 190px;
     }
     .roadmap5 {
-        top: 770px;
-        right: 250px;
+        top: 1000px;
+        right: 120px;
+        // top: 770px;
+        // right: 250px;
     }
     .roadmap6 {
-        top: 930px;
-        left: 150px;
+        top: 1230px;
+        left: 60px;
     }
     .roadmap7 {
-        top: 1020px;
-        right: 170px;
+        top: 1370px;
+        right: 20px;
     }
     .roadmap8 {
-        top: 1220px;
-        left: 150px;
+        top: 1650px;
+        left: 0px;
     }
     .roadmap9 {
-        top: 1250px;
-        right: 200px;
+        top: 1690px;
+        right: 100px;
     }
     .roadmap10 {
-        top: 1520px;
-        left: 200px;
+        top: 2090px;
+        left: 20px;
     }
     .roadmap11 {
-        top: 1520px;
-        left: 415px;
+        top: 2090px;
+        left: 345px;
     }
     .roadmap12 {
-        top: 1580px;
-        right: 430px;
+        top: 2160px;
+        right: 370px;
     }
     .roadmap13 {
-        top: 1520px;
-        right: 200px;
+        top: 2090px;
+        right: 60px;
     }
 
     @media (max-width: 1340px) {
         .roadmap1 {
-            top: 350px;
+            top: 390px;
             left: 370px;
         }
         .roadmap2 {
-            top: 435px;
-            left: 140px;
+            top: 515px;
+            left: 60px;
         }
         .roadmap3 {
-            top: 430px;
-            right: 165px;
+            top: 515px;
+            right: 65px;
         }
         .roadmap4 {
-            top: 550px;
-            left: 230px;
+            top: 700px;
+            left: 130px;
         }
         .roadmap5 {
-            top: 640px;
-            right: 150px;
+            top: 820px;
+            right: 50px;
         }
         .roadmap6 {
-            top: 760px;
-            left: 90px;
+            top: 990px;
+            left: 30px;
         }
         .roadmap7 {
-            top: 825px;
-            right: 100px;
+            top: 1090px;
+            right: 20px;
         }
         .roadmap8 {
-            top: 970px;
-            left: 80px;
+            top: 1290px;
+            left: 0px;
         }
         .roadmap9 {
-            top: 990px;
-            right: 100px;
+            top: 1330px;
+            right: 30px;
         }
         .roadmap10 {
-            top: 1200px;
-            left: 135px;
+            top: 1620px;
+            left: 20px;
         }
         .roadmap11 {
-            top: 1200px;
-            left: 290px;
+            top: 1620px;
+            left: 230px;
         }
         .roadmap12 {
-            top: 1240px;
-            right: 300px;
+            top: 1660px;
+            right: 250px;
         }
         .roadmap13 {
-            top: 1200px;
-            right: 90px;
+            top: 1620px;
+            right: 20px;
         }
     }
     @media (max-width: 992px) {
@@ -1209,6 +1252,7 @@ body > iframe {
     text-transform: uppercase;
     display: inline;
     position: relative;
+    transition: 0.3s ease;
 
     // padding: 25px 50px;
     .wrap {
@@ -1233,6 +1277,11 @@ body > iframe {
     margin-bottom: 100px;
 }
 
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
 .about__section {
     // background-color: #111016;
     background: radial-gradient(#292a2e, #111016);
@@ -1240,7 +1289,111 @@ body > iframe {
     min-height: 100vh;
     position: relative;
     overflow: hidden;
-    padding-bottom: 150px;
+    // padding-bottom: 150px;
+}
+
+@mixin gradientAnimation($start, $end, $transTime) {
+    background-size: 100%;
+    background-image: linear-gradient($start, $end);
+    position: relative;
+    z-index: 100;
+    &:before {
+        background-image: linear-gradient($end, $start);
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        z-index: -100;
+        transition: opacity $transTime;
+    }
+    &:hover {
+        &:before {
+            opacity: 1;
+        }
+    }
+}
+
+.team__section {
+    background-color: #fff;
+    min-height: 100vh;
+
+    .gr2 {
+        // width: 400px;
+        height: 400px;
+        position: absolute;
+        top: -100px;
+        left: -100px;
+    }
+    .team__cards-wrapper {
+        // background-color: red;
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+        justify-content: space-evenly;
+    }
+    .team-card {
+        text-align: center;
+        // min-width: 320px;
+        // max-width: 370px;
+        width: 330px;
+        min-height: 360px;
+        margin-top: 50px;
+        // width: 300px;
+        border: double 6px transparent;
+        border-radius: 20px;
+        background-image: linear-gradient(#fff, #fff),
+            linear-gradient(to bottom right, #f3f348, #cce64f, #6ac761, #31b46c);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        transition: 0.5s ease;
+        background-position: 0 0px;
+
+        .wrap {
+            padding: 40px 30px;
+        }
+        .picture {
+            width: 120px;
+        }
+        .title {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .text {
+            margin-top: 10px;
+            text-align: center;
+            color: #333333 !important;
+        }
+        .icons {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+                width: 30px;
+                margin: 0 5px;
+            }
+        }
+    }
+
+    .team-card:hover {
+        transition: 0.5s ease;
+        background-image: linear-gradient(#fff, #fff),
+            linear-gradient(to bottom right, #f3f348, #cce64f, #6ac761, #31b46c);
+        // background-position: -10px ;
+        transform: scale(1.05);
+        // transform: rotate(90deg);
+
+        // @include gradientAnimation(red, blue, .6s);
+    }
+}
+
+.section {
+    padding: 70px 0;
 }
 
 // Risks section
@@ -1249,6 +1402,25 @@ body > iframe {
     padding-top: 50px;
     padding-bottom: 50px;
     font-family: $Raleway !important;
+    overflow: hidden;
+}
+
+.faq__sec {
+    background-color: #fff;
+    position: relative;
+    .spider__web {
+        top: 0;
+    }
+    .gr11 {
+        // width: 400px;
+        height: 400px;
+        position: absolute;
+        bottom: -100px;
+        left: -100px;
+    }
+    @media (max-width: 700px) {
+        // top: -50px !important;
+    }
 }
 
 .drop__down__item {
@@ -1308,6 +1480,39 @@ body > iframe {
 
     transition: 0.4s ease;
     transition-delay: 0.2s;
+}
+
+.drop__down__item-faq {
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #187707, #008b00, #8cbf5f, #187707);
+    color: #111016;
+}
+
+.footer {
+    padding: 50px 0;
+    background: radial-gradient(#292a2e, #111016);
+    .row {
+        display: flex;
+        justify-content: space-between;
+        .nav {
+            text-transform: uppercase;
+            color: #fff;
+            .navItem {
+                font-family: $Raleway !important;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+        }
+        .rights{
+            padding-top: 10px;
+            text-transform: capitalize;
+            font-family: $FuturaRegular !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+
+        }
+    }
 }
 
 @media (min-width: 993px) and (max-width: 1340px) {
@@ -1471,6 +1676,10 @@ body > iframe {
             margin-bottom: 40px;
         }
     }
+
+    .gr2{
+        height: 200px !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1502,6 +1711,16 @@ body > iframe {
             margin-bottom: 40px;
             font-size: 1.2rem;
             line-height: 1.5rem;
+        }
+    }
+
+    .team-card {
+        width: 300px !important;
+    }
+
+    .footer{
+        .row{
+            flex-direction: column;
         }
     }
 }
@@ -1541,6 +1760,9 @@ body > iframe {
                     }
                 }
             }
+        }
+        .card:hover {
+            // transform: scale(1.05);
         }
     }
 
@@ -1621,35 +1843,12 @@ body > iframe {
         padding-top: 90px !important;
         padding-bottom: 35px !important;
     }
-
-    // .next__content-row {
-    //     min-height: none !important;
-    //     .card {
-    //         width: 100%;
-    //         // margin: 0 10px 100px;
-    //         .wrap {
-    //             flex-direction: row;
-    //             padding: 20px;
-    //             .picture {
-    //                 width: 30%;
-    //             }
-    //             .text {
-    //                 margin-top: 0;
-    //                 width: 70%;
-    //                 font-size: 1rem;
-    //                 line-height: 1.4rem;
-    //                 text-align: inherit;
-    //                 br {
-    //                     display: none;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-
-    // .next__content-row:nth-child(1) .wrap {
-    //     min-height: 100px !important;
-    // }
+    .drop__down__item-title {
+        font-size: 1.2rem;
+    }
+    .arrow__pointer {
+        right: 10px !important;
+    }
 }
 
 @media (max-width: 480px) {
