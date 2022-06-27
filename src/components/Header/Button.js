@@ -103,6 +103,7 @@ class App extends Component {
                     Personal account 
                 </div>
             );
+            
         }
 
         let wallet_button;
